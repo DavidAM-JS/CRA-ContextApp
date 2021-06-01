@@ -10,7 +10,7 @@ class LoginButton extends Component {
 
     render(){
         return(
-            <button className={`${this.props.theme} button-login`} onClick={this.handlerClick}>{`${this.props.isLoggedIn ? 'Log out': 'log In'}`}</button>
+            <button className={`${this.props.theme} button-login`} onClick={this.handlerClick}>{`${this.props.isLoggedIn ? 'Log out': 'Log In'}`}</button>
         )
     }
 }

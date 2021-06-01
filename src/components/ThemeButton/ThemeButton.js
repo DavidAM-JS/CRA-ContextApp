@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import {ThemeContext} from '../../context/ThemeContext';
+import './styles.css'
 
 class ThemeButton extends Component {
     handlerClick = () => {

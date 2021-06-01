@@ -10,7 +10,7 @@ class Header extends Component {
                 {
                     ({theme}) => (
                         <header className={`${theme} header`}>
-                            <h1 className={`${theme} header`}>CRA-ContextApp</h1>
+                            <h1 className={`${theme} header-title`}>CRA-ContextApp</h1>
                             <ThemeButton theme={theme}/>
                         </header>
                     )

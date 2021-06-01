@@ -1,8 +1,19 @@
+.header{
+    display: flex;
+    justify-content: space-between;
+}
+
+.header-title{
+    margin-left: 5%;
+}
+
 .Day.header{
     background-color: rgb(231, 173, 106);
     width: 100%;
 }
 
-.Nigth.header{
-    background-color: #000;
+.Night.header{
+    background-color: rgb(26, 26, 41);
+    width: 100%;
+    color: #fff;
 }

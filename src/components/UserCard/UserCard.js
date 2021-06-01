@@ -22,15 +22,6 @@ class UserCard extends Component {
                 {
                     ({ theme }) => (
                         <div className={`user-container ${theme}`}>
-                            <img src={avatar} alt={avatar} className="avatar" />
-                            <div className="user-about-info">
-                                <h1>{name}</h1>
-                                <p>{biography}</p>
-                                <div className="user-count-info">
-                                    <p>{`User: ${username}`}</p>
-                                    <p>{`Password: ${password}`}</p>
-                                </div>
-                            </div>
                             <div className="buttons">
                                 <LoginButton userId={id} theme={theme} isLoggedIn={isLoggedIn} />
                                 <div>
@@ -40,6 +31,21 @@ class UserCard extends Component {
                                     }
                                 </div>
                             </div>
+                            {
+                                isLoggedIn ?
+                                    <div className="user-container">
+                                        <img src={avatar} alt={avatar} className="avatar" />
+                                        <div className="user-about-info">
+                                            <h1>{name}</h1>
+                                            <p>{biography}</p>
+                                            <div className="user-count-info">
+                                                <p>{`User: ${username}`}</p>
+                                                <p>{`Password: ${password}`}</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    : null
+                            }
                         </div>
                     )
                 }
