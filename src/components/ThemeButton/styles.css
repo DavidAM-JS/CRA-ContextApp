@@ -1,0 +1,25 @@
+.button-theme {
+    border: 2px solid transparent;
+    padding: 1rem 1rem;
+    display: inline-block;
+    font-weight: 700;
+    font-size: 2rem;
+    cursor: pointer;
+    box-shadow: 0 1px 3px rgb(0 0 0 / 20%);
+    border-radius: 0.5rem;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .button-theme:hover {
+    transform: scale(1.1);
+  }
+  
+  .Day.button-theme {
+    background: #adcbe3;
+    color: #111111;
+  }
+  
+  .Night.button-theme {
+    background-color: #4b86b4;
+    color: snow;
+  }
