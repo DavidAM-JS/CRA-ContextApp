@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { UserContextConsumer } from '../../context/UserContext';
 import UserCard from '../UserCard/UserCard';
+import './styles.css'
 
 class UserList extends Component {
     

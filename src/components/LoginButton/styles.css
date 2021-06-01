@@ -1,9 +1,10 @@
 .button-login{
-    background-color: rgb(33, 192, 197);
+    background-color: rgb(109, 239, 243);
     margin-bottom: 10px;
     width: 90px;
     font-weight: bold;
     font-size: 15px;
+    border: solid 3px #000;
     border-radius: 10px;
     cursor: pointer;
 }

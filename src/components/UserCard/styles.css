@@ -1,12 +1,24 @@
 .user-container {
+  width: 93%;
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+  margin: 30px auto;
+  border-radius: 14px;
+  box-shadow: 0 0 5px rgba(42, 46, 49, 0.925)
+  }
+
+  .user-info{
   display: flex;
   padding: 20px;
-  margin: 50px 20px;
+  margin: 30px 20px;
   border-radius: 14px;
-  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
-  rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+  box-shadow: 0 0 5px rgba(60, 64, 67, 0.3)
   }
   
+  .Night.user-info{
+    box-shadow: 0 0 5px rgba(255, 255, 255, 0.568)
+  }
   .avatar{
     width: 18%;
     height: 250px;
@@ -44,13 +56,13 @@
   }
 
   .button-delete{
-    background-color: rgb(33, 192, 197);
+    background-color: rgb(109, 239, 243);
     margin-bottom: 10px;
     width: 90px;
     font-weight: bold;
     font-size: 15px;
     border-radius: 10px;
-    border: solid 2px blue;
+    border: solid 3px #000;
     cursor: pointer;
   }
 
@@ -65,4 +77,15 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+  }
+
+  .buttons-collapse{
+    width: 50%;
+    padding: auto 0;
+    margin-top: 10px;
+  }
+
+  .login-advice{
+    width: 50%;
+    margin: auto 0;
   }

@@ -22,7 +22,7 @@ class UserCard extends Component {
                 {
                     ({ theme }) => (
                         <div className={`user-container ${theme}`}>
-                            <div className="buttons">
+                            <div className={`${isLoggedIn ? 'buttons' : 'buttons-collapse'}`}>
                                 <LoginButton userId={id} theme={theme} isLoggedIn={isLoggedIn} />
                                 <div>
                                     {
@@ -33,7 +33,7 @@ class UserCard extends Component {
                             </div>
                             {
                                 isLoggedIn ?
-                                    <div className="user-container">
+                                    <div className={`user-info ${theme}`}>
                                         <img src={avatar} alt={avatar} className="avatar" />
                                         <div className="user-about-info">
                                             <h1>{name}</h1>
@@ -44,7 +44,7 @@ class UserCard extends Component {
                                             </div>
                                         </div>
                                     </div>
-                                    : null
+                                    : <span className="login-advice">Login to see {name} information</span>
                             }
                         </div>
                     )
